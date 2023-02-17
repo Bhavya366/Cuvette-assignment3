@@ -1,0 +1,15 @@
+*{
+    font-family: sans-serif;   
+}
+.box{
+    text-align: center;
+    width:300px;
+    border: 1px solid black;
+}
+button{
+    padding:10px 20px;
+    border:none;
+    background-color:darkolivegreen;
+    color:white;
+    border-radius: 50px;
+}

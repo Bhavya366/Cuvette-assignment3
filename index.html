@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+  </head>
+  <body>
+
+    <script>
+        var count = 0;
+        function increase(){
+            count = count + 1
+            document.getElementById("count").innerHTML = count;
+        }
+        function reset(){
+            count = 0
+            document.getElementById("count").innerHTML = count;
+        }
+        function decrement(){
+            count = count - 1
+            count = count < 0 ? 0 : count;
+            document.getElementById("count").innerHTML = count;
+        }
+        
+    </script>
+
+    <center><div class="box">
+      <div>
+        <p id="count">0</p>
+      </div>
+      <div>
+        <button onclick="increase()">Increment</button>
+        <button onclick="reset()">Reset</button>
+        <button onclick="decrement()">Decrement</button>
+      </div><br>
+    </div></center>
+  </body>
+</html>
